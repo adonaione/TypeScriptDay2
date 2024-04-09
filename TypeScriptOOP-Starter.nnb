@@ -231,9 +231,34 @@
         {
             "language": "typescript",
             "source": [
-                ""
+                "class Car3 {\n    //define the type of the properties\n    readonly id:number\n    make:string\n    model:string\n    year:number\n    nickname?: string\n\n    constructor(id: number, make: string, model:string, year:number){\n        // assign the properties\n        this.id=id\n        this.make = make\n        this.model = model\n        this.year = year\n    }\n\n    drive(miles:number):void{\n        console.log(`The ${this.year} ${this.make} ${this.model} has driven ${miles} miles`)\n    }\n}"
             ],
             "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let delorean3 = new Car3(2, 'DeLorean', 'DMC-12', 1981);\nconsole.log(delorean3)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Car3 {",
+                                "  id: 2,",
+                                "  make: 'DeLorean',",
+                                "  model: 'DMC-12',",
+                                "  year: 1981,",
+                                "  nickname: undefined",
+                                "}",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "language": "typescript",
@@ -245,16 +270,27 @@
         {
             "language": "typescript",
             "source": [
-                ""
+                "let batmobile = new Car3(3, 'Wayne', 'Truck/Motorcycle', 2008, 'Batmobile');\n\nconsole.log(batmobile)"
             ],
-            "outputs": []
-        },
-        {
-            "language": "typescript",
-            "source": [
-                ""
-            ],
-            "outputs": []
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Car3 {",
+                                "  id: 3,",
+                                "  make: 'Wayne',",
+                                "  model: 'Truck/Motorcycle',",
+                                "  year: 2008,",
+                                "  nickname: undefined",
+                                "}",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "language": "markdown",
